@@ -17,7 +17,7 @@ const Navbar = ({
 
   const onLogout = async () => {
     try {
-      const response = await axiosInstance.post("/user/signout")
+      const response = await axiosInstance.post("https://travel-diary-backend-8dz4.onrender.com/user/signout")
 
       if (response.data) {
         dispatch(signOutSuccess())
