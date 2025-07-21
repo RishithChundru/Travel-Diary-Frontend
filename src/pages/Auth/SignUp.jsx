@@ -39,7 +39,7 @@ const SignUp = () => {
 
     // SignUp API call
     try {
-      const response = await axiosInstance.post("https://travel-diary-backend-8dz4.onrender.com/auth/signup", {
+      const response = await axiosInstance.post("http://localhost:5000/api/auth/signup", {
         username: name,
         email,
         password,

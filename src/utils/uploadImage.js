@@ -7,7 +7,7 @@ const uploadImage = async (imageFile) => {
 
   try {
     const response = await axiosInstance.post(
-      "/travel-story/image-upload",
+      "http://localhost:5000/api/travel-story/image-upload",
       formData,
       {
         headers: {
